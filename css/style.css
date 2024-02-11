@@ -1,0 +1,218 @@
+@font-face {
+  font-family: YoungSerif;
+  src: url('../assets//fonts/young-serif/YoungSerif-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Outfit;
+  src: url('../assets//fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+:root {
+  --primary-color: hsl(234, 85%, 45%);
+}
+
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  background-color: #f3e5d8;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 700px;
+  padding: 45px;
+  border-radius: 20px;
+  margin: 50px 0px 50px 0px;
+}
+
+.main-titles {
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-size: 25px;
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+
+}
+
+.header-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.preparation-section {
+  background-color: #fff7fc;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  border-radius: 10px;
+  padding: 0px 0px 30px 20px;
+  margin: 0px;
+}
+
+.ingredients-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.instruction-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.omellet-img {
+  width: 700px;
+  height: 330px;
+  border-radius: 20px ;
+}
+
+.strong-color {
+  color: #514c46;
+  font-family: 'Outfit';
+  font-weight: 600;
+  position: relative;
+  left: 15px;
+}
+
+.nutrition-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.nutrition-title {
+  color: #726e6a;
+}
+
+.nutrition-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: end;
+  margin: 0px 0px 0px 40px;
+}
+
+
+.subtitles {
+  width: 50%;
+  color: #726e6a;
+  font-family: 'YoungSerif';
+  font-weight: 400;
+}
+
+.header-section h1 {
+  font-family: 'YoungSerif';
+  font-weight: 150;
+  align-self: flex-start;
+  color: #312e2d;
+  font-size: 2em;
+  margin: 25px 0px 20px 0px;
+}
+.header-section p {
+  color: #726e6a;
+  font-size: 0.98em;
+  margin: 0px 0px 20px 0px;
+}
+
+.preparation-section h3 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 595;
+  font-family: 'Outfit';
+  margin: 30px  0px 10px 0px;
+}
+
+.instruction-section {
+  width: calc(100% - 40px);
+}
+
+.instruction-section ol {
+  padding-left: 1.3rem;
+}
+
+.nutrition-section ul {
+  margin: 0px;
+  padding: 0px;  
+}
+.nutrition-section ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 15px 0px;
+  margin: 0px;
+  border-bottom: 1px solid hsl(14, 45%, 36%);
+}
+
+.nutrition-section ul li:last-child {
+  border-bottom: none;
+}
+
+.nutrition-content span {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+  font-family: 'Outfit';
+}
+
+.nutrition-section h2 , .nutrition-title {
+  padding-bottom: 10px;
+}
+
+li {
+  line-height: 2; 
+  color: #644338;
+  font-weight: bold;
+}
+
+li span {
+  color: #726e6a;
+  font-family: 'Outfit';
+  font-weight: 200;
+  position: relative;
+  left: 15px;
+}
+
+p {
+  font-family: 'YoungSerif';
+}
+
+@media (max-width: 600px) {
+
+  .main-container {
+    padding: 0;
+  }
+  .content {
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+  }
+  
+  .omellet-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 0;
+  }
+
+  .content-section {
+    padding: 0px 20px 0px 20px;
+  }
+
+}
